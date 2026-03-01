@@ -30,33 +30,42 @@ Perfect as a learning project, WebSocket demo, or starting point for group chat 
 
 1. Clone the repository
 
-```bash
+```
 git clone https://github.com/Chandrakant6/chat_app.git
-cd chat_app```
+cd chat_app
+```
 
 2. Create & activate virtual environment
 
-```bash
+```
 python -m venv venv
-source venv/bin/activate    # Windows: venv\Scripts\activate```
+source venv/bin/activate    # Windows: venv\Scripts\activate
+```
 
 3. Install dependencies
 
-```pip install fastapi uvicorn[standard] websockets```
+```
+pip install fastapi uvicorn[standard] websockets
+```
 
 4. Run the server
 
-```uvicorn main:app --reload --port 8000```
+```
+uvicorn main:app --reload --port 8000
+```
 
 5. Open in browser
 
-```http://localhost:8000/```
-
+```
+http://localhost:8000/
+```
 Open the same URL in multiple tabs/windows → start chatting!
 
 
 6. Project Structure
-```chat_app/
+```
+chat_app/
 ├── main.py          # FastAPI app + WebSocket logic + embedded HTML client
 ├── README.md
-└── requirements.txt   (you can generate with: pip freeze > requirements.txt)```
+└── requirements.txt   (you can generate with: pip freeze > requirements.txt)
+```
